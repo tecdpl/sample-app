@@ -41,10 +41,10 @@ EOF
 
 echo "==> Build da imagem Docker..."
 cd "$TEMPDIR"
-docker build -t "$APP_NAME" .
+#docker build -t "$APP_NAME" .
 
 echo "==> Subindo container..."
-docker run -d -p 5050:5050 --name "$CONTAINER_NAME" "$APP_NAME"
+#docker run -d -p 5050:5050 --name "$CONTAINER_NAME" "$APP_NAME"
 
 echo "==> Containers em execução:"
-docker ps -a | grep "$CONTAINER_NAME" || docker ps -a
+#docker ps -a | grep "$CONTAINER_NAME" || docker ps -a
